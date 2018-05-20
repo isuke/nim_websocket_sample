@@ -5,13 +5,19 @@
 :sectlinks:
 :sectnums:
 :source-highlighter: highlightjs
-:toc: left
-:toclevels: 1
 
 = Nim Websocket sample
 
+== Install
+
+[source,sh]
+----
+$ nimble develop
+----
+
 == Usage
 
+[source,sh]
 ----
 $ nimble c -r src/nim_websocket_sample_server.nim
 $ nimble c -r src/nim_websocket_sample_client.nim

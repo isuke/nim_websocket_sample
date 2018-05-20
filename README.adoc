@@ -1,0 +1,18 @@
+:chapter-label:
+:icons: font
+:lang: en
+:sectanchors:
+:sectlinks:
+:sectnums:
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 1
+
+= Nim Websocket sample
+
+== Usage
+
+----
+$ nimble c -r src/nim_websocket_sample_server.nim
+$ nimble c -r src/nim_websocket_sample_client.nim
+----

@@ -19,6 +19,6 @@ $ nimble develop
 
 [source,sh]
 ----
-$ nimble c -r src/nim_websocket_sample_server.nim
-$ nimble c -r src/nim_websocket_sample_client.nim
+$ nimble c -r src/server.nim
+$ nimble c -r src/client.nim
 ----

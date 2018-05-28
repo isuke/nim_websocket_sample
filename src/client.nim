@@ -9,6 +9,11 @@ proc reader() {.async.} =
     let read = await ws.readData()
     echo "read: ", read
 
+proc writer() {.async.} =
+  while true:
+    let text = readLine stdin
+    await ws.sendText text
+
 proc ping() {.async.} =
   while true:
     await sleepAsync(6000)
@@ -16,5 +21,6 @@ proc ping() {.async.} =
     await ws.sendPing(masked = true)
 
 asyncCheck reader()
+asyncCheck writer()
 asyncCheck ping()
 runForever()
